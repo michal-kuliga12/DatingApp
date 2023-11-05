@@ -41,7 +41,6 @@ public class AccountController : BaseApiController
         return new UserDto { Username = user.UserName, Token = _tokenService.CreateToken(user), };
     }
 
-    [Authorize]
     [HttpPost("login")]
     public async Task<ActionResult<UserDto>> Login(LoginDto loginDto)
     {
