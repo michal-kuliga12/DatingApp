@@ -1,0 +1,108 @@
+{
+  "settings": {
+    "components": {
+      "code": true,
+      "binaries": false
+    },
+    "targetId": "",
+    "targetDisplayName": ".NET 8.0"
+  },
+  "analysisStartTime": "2024-08-20T20:50:03.4509949Z",
+  "analysisEndTime": "2024-08-20T20:50:13.8501049Z",
+  "privacyModeHelpUrl": "https://go.microsoft.com/fwlink/?linkid=2270980",
+  "stats": {
+    "summary": {
+      "projects": 1,
+      "issues": 1,
+      "incidents": 3,
+      "effort": 3
+    },
+    "charts": {
+      "severity": {
+        "Mandatory": 0,
+        "Optional": 0,
+        "Potential": 3,
+        "Information": 0
+      },
+      "category": {
+        "NuGet": 3
+      }
+    }
+  },
+  "projects": [
+    {
+      "path": "API\\API.csproj",
+      "startingProject": true,
+      "issues": 1,
+      "storyPoints": 3,
+      "ruleInstances": [
+        {
+          "incidentId": "3dab18c2-4869-4bb7-b67a-acb6e07b2026",
+          "ruleId": "NuGet.0002",
+          "projectPath": "API\\API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.AspNetCore.OpenApi, 7.0.7\n\nRekomendacja:\n\nMicrosoft.AspNetCore.OpenApi 8.0.8",
+              "protected": "Microsoft.AspNetCore.OpenApi, 7.0.7\n\nRekomendacja:\n\nMicrosoft.AspNetCore.OpenApi 8.0.8"
+            },
+            "kind": "File",
+            "path": "API\\API.csproj",
+            "snippet": "Microsoft.AspNetCore.OpenApi, 7.0.7\n\nRekomendacja:\n\nMicrosoft.AspNetCore.OpenApi 8.0.8",
+            "protectedSnippet": "Microsoft.AspNetCore.OpenApi, 7.0.7\n\nRekomendacja:\n\nMicrosoft.AspNetCore.OpenApi 8.0.8",
+            "label": "Microsoft.AspNetCore.OpenApi 7.0.7"
+          }
+        },
+        {
+          "incidentId": "4bf1b878-f8b9-4c4a-a957-adee9f124dd5",
+          "ruleId": "NuGet.0002",
+          "projectPath": "API\\API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.EntityFrameworkCore.Sqlite, 7.0.20\n\nRekomendacja:\n\nMicrosoft.EntityFrameworkCore.Sqlite 8.0.8",
+              "protected": "Microsoft.EntityFrameworkCore.Sqlite, 7.0.20\n\nRekomendacja:\n\nMicrosoft.EntityFrameworkCore.Sqlite 8.0.8"
+            },
+            "kind": "File",
+            "path": "API\\API.csproj",
+            "snippet": "Microsoft.EntityFrameworkCore.Sqlite, 7.0.20\n\nRekomendacja:\n\nMicrosoft.EntityFrameworkCore.Sqlite 8.0.8",
+            "protectedSnippet": "Microsoft.EntityFrameworkCore.Sqlite, 7.0.20\n\nRekomendacja:\n\nMicrosoft.EntityFrameworkCore.Sqlite 8.0.8",
+            "label": "Microsoft.EntityFrameworkCore.Sqlite 7.0.20"
+          }
+        },
+        {
+          "incidentId": "af2ce0db-a406-4c95-963e-3fc9658de85a",
+          "ruleId": "NuGet.0002",
+          "projectPath": "API\\API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.EntityFrameworkCore.Design, 7.0.20\n\nRekomendacja:\n\nMicrosoft.EntityFrameworkCore.Design 8.0.8",
+              "protected": "Microsoft.EntityFrameworkCore.Design, 7.0.20\n\nRekomendacja:\n\nMicrosoft.EntityFrameworkCore.Design 8.0.8"
+            },
+            "kind": "File",
+            "path": "API\\API.csproj",
+            "snippet": "Microsoft.EntityFrameworkCore.Design, 7.0.20\n\nRekomendacja:\n\nMicrosoft.EntityFrameworkCore.Design 8.0.8",
+            "protectedSnippet": "Microsoft.EntityFrameworkCore.Design, 7.0.20\n\nRekomendacja:\n\nMicrosoft.EntityFrameworkCore.Design 8.0.8",
+            "label": "Microsoft.EntityFrameworkCore.Design 7.0.20"
+          }
+        }
+      ]
+    }
+  ],
+  "rules": {
+    "NuGet.0002": {
+      "id": "NuGet.0002",
+      "description": "Uaktualnienie pakietu NuGet jest rekomendowane dla wybranej platformy docelowej.\n\nRekomendowane jest, aby standardowe pakiety .NET mia\u0142y wersje zgodne z wersj\u0105 platformy .NET przeznaczon\u0105 dla projektu.\n\nWiadomo r\u00F3wnie\u017C, \u017Ce niekt\u00F3re inne pakiety dzia\u0142aj\u0105 lepiej w przypadku wybranych platform docelowych.",
+      "label": "Rekomendowane jest uaktualnienie pakietu NuGet",
+      "severity": "Potential",
+      "effort": 1,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262530",
+          "isCustom": false
+        }
+      ]
+    }
+  }
+}
